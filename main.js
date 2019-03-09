@@ -54,7 +54,7 @@ function checkRgbNumber(target) {
       count++
       setInvalidFeedBack(item)
     } else {
-      target.forEach(item => rgbColor.push(parseInt(item.value).toString(16).padEnd(2, "0")))
+      target.forEach(item => rgbColor.push((parseInt(item.value).toString(16)).padStart(2, '0')))
       setValidFeedBack(item)
     }
   })
