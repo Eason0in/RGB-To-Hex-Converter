@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>RGB to Hex Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <section id="converter">
+            <div class="rgb">
+                <h4 class="title">RGB</h4>
+                <div class="color">
+                    <div class="color-item">
+                        <label class="subtitle" for="color-red">R:</label>
+                        <div class="color-input">
+                            <input type="text" id="color-red" class="form-control" placeholder="0~255"
+                                data-target="color" data-color="red" maxlength="3">
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="show-color show-red"></div>
+                    </div>
+
+                    <div class="color-item">
+                        <label class="subtitle" for="color-green">G:</label>
+                        <div class="color-input">
+                            <input type="text" id="color-green" class="form-control" placeholder="0~255"
+                                data-target="color" data-color="green" maxlength="3">
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="show-color show-green"></div>
+                    </div>
+                    <div class="color-item">
+                        <label class="subtitle" for="color-blue">B:</label>
+                        <div class="color-input">
+                            <input type="text" id="color-blue" class="form-control" placeholder="0~255"
+                                data-target="color" data-color="blue" maxlength="3">
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="show-color show-blue"></div>
+                    </div>
+                </div>
+                <button type="button" id="btn-convert" class="btn btn-primary">Convert</button>
+            </div>
+            <div class="hex">
+                <h4 class="title">HEX</h4>
+                <div class="color">
+                    <div class="hex-color-item">
+                        <input id="hex-text" class="text-uppercase" type="text">
+
+                    </div>
+                    <div class="hex-color-item">
+                        <div class="hex-show-color"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src=" https://unpkg.com/axios/dist/axios.min.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
